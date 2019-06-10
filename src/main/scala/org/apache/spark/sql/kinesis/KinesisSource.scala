@@ -21,10 +21,11 @@ import java.io._
 import java.util.Locale
 import java.util.concurrent.atomic.AtomicBoolean
 
+import scala.collection.parallel.ForkJoinTaskSupport
+
 import com.amazonaws.services.kinesis.model.Record
 import org.apache.hadoop.conf.Configuration
 
-import scala.collection.parallel.ForkJoinTaskSupport
 import org.apache.spark.SparkContext
 import org.apache.spark.internal.Logging
 import org.apache.spark.sql._
